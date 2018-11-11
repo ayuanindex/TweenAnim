@@ -41,6 +41,29 @@ public class TestActivity extends AppCompatActivity {
                 iv.startAnimation(ra);
             }
         });
-        
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation sa = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.scales);
+                iv.startAnimation(sa);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation ta = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.translate);
+                iv.startAnimation(ta);
+            }
+        });
+
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation sa = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.set);
+                iv.startAnimation(sa);
+            }
+        });
     }
 }
